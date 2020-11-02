@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="content-language" content="en-EN" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TOPPFOXX | POC</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  <style>
+    .navbar-inverse {
+      background-color: #000;
+      border-color: #080808;
+    }
+
+    .btn-link {
+      text-decoration: none;
+    }
+
+    .list-group-item {
+      padding: 15px 20px;
+      margin-bottom: 4px;
+    }
+
+    .navbar {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- <a class="navbar-brand" href="#"> -->
+        <img src="assets/logo.png" width="100" style="margin-left: 40px;">
+        <!-- </a> -->
+      </div>
+
+    </div>
+  </nav>
+  <div class="container-fluid" style="text-align:center">
+    <h6>face to the camera</h6>
+    <!-- <button onclick="red('')">red</button> -->
+    <div class="row">
+      <div class="col-sm-12 col-md-4">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Change Glass Color
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="list-group">
+                  <button type="button" class="list-group-item list-group-item-action" onclick="glasscolor('757472')"
+                    style="background: #757472;">color 1</button>
+                  <button type="button" class="list-group-item list-group-item-action" onclick="glasscolor('a2e8f4')"
+                    style="background: #a2e8f4">color
+                    2</button>
+                  <button type="button" class="list-group-item list-group-item-action" onclick="glasscolor('000000')"
+                    style="background: #000000">color
+                    3</button>
+                  <button type="button" class="list-group-item list-group-item-action" onclick="glasscolor('fce0dc')"
+                    style="background: #fce0dc">color
+                    4</button>
+                  <button type="button" class="list-group-item list-group-item-action" onclick="glasscolor('ccd2d2')"
+                    style="background: #ccd2d2">color
+                    5</button>
+                  <button type="button" class="list-group-item list-group-item-action" onclick="glasscolor('d13f88')"
+                    style="background: #d13f88">color
+                    6</button>
+                  <button type="button" class="list-group-item list-group-item-action" onclick="glasscolor('a9e8f9')"
+                    style="background: #a9e8f9">color
+                    7</button>
+                  <button type="button" class="list-group-item list-group-item-action" onclick="glasscolor('937864')"
+                    style="background: #937864">color
+                    8</button>
+                  <button type="button" class="list-group-item list-group-item-action" onclick="glasscolor('4baad1')"
+                    style="background: #4baad1">color
+                    9</button>
+                  <button type="button" class="list-group-item list-group-item-action" onclick="glasscolor('e1b8b5')"
+                    style="background: #e1b8b5">color
+                    10</button>
+                  <button type="button" class="list-group-item list-group-item-action" onclick="glasscolor('f9a49a')"
+                    style="background: #f9a49a">color
+                    11</button>
+                  <button type="button" class="list-group-item list-group-item-action" onclick="glasscolor('ffc184')"
+                    style="background: #ffc184">color
+                    12</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  Change Frame Color
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="list-group">
+                  <button type="button" class="list-group-item list-group-item-action" onclick="framecolor('757472')"
+                    style="background: #757472;">color 1</button>
+                  <button type="button" class="list-group-item list-group-item-action" onclick="framecolor('a2e8f4')"
+                    style="background: #a2e8f4">color
+                    2</button>
+                  <button type="button" class="list-group-item list-group-item-action" onclick="framecolor('000000')"
+                    style="background: #000000">color
+                    3</button>
+                  <button type="button" class="list-group-item list-group-item-action" onclick="framecolor('fce0dc')"
+                    style="background: #fce0dc">color
+                    4</button>
+                  <button type="button" class="list-group-item list-group-item-action" onclick="framecolor('ccd2d2')"
+                    style="background: #ccd2d2">color
+                    5</button>
+                  <button type="button" class="list-group-item list-group-item-action" onclick="framecolor('d13f88')"
+                    style="background: #d13f88">color
+                    6</button>
+                  <button type="button" class="list-group-item list-group-item-action" onclick="framecolor('a9e8f9')"
+                    style="background: #a9e8f9">color
+                    7</button>
+                  <button type="button" class="list-group-item list-group-item-action" onclick="framecolor('937864')"
+                    style="background: #937864">color
+                    8</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 ">
+        <canvas id='canvas' width="600" height="600"></canvas>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/FaceFilter.js"></script>
+<script src="js/three.js"></script>
+<!-- <script src="js/ThreejsHelper.js"></script> -->
+<script src="js/Resizer.js"></script>
+<!-- <script src="js/ThreeGlassesCreator.js"></script> -->
+<script src="js/main.js"></script>
+
+</html>
